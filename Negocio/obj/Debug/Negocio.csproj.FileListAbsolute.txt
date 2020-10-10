@@ -1,0 +1,9 @@
+C:\Users\Edwin salcedo\Desktop\VISUAL_STUDIO\TP_Salcedo_y_Jaures\Negocio\bin\Debug\Negocio.dll
+C:\Users\Edwin salcedo\Desktop\VISUAL_STUDIO\TP_Salcedo_y_Jaures\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Edwin salcedo\Desktop\VISUAL_STUDIO\TP_Salcedo_y_Jaures\Negocio\bin\Debug\Dominio.dll
+C:\Users\Edwin salcedo\Desktop\VISUAL_STUDIO\TP_Salcedo_y_Jaures\Negocio\bin\Debug\Dominio.pdb
+C:\Users\Edwin salcedo\Desktop\VISUAL_STUDIO\TP_Salcedo_y_Jaures\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Users\Edwin salcedo\Desktop\VISUAL_STUDIO\TP_Salcedo_y_Jaures\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Edwin salcedo\Desktop\VISUAL_STUDIO\TP_Salcedo_y_Jaures\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\Edwin salcedo\Desktop\VISUAL_STUDIO\TP_Salcedo_y_Jaures\Negocio\obj\Debug\Negocio.dll
+C:\Users\Edwin salcedo\Desktop\VISUAL_STUDIO\TP_Salcedo_y_Jaures\Negocio\obj\Debug\Negocio.pdb
