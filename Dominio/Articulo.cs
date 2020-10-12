@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Management.Instrumentation;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,9 +15,10 @@ namespace Dominio
         public string descripcion { get; set; }
 
         public string imagen { get; set; }
-
+        
         public Marca marca { get; set; }
         public Categoria categoria { get; set; }
         public decimal precio { get; set; }
     }
 }
+

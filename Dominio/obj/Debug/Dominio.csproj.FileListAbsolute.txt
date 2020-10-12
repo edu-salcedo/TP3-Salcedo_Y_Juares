@@ -1,6 +1,18 @@
-C:\Users\Edwin salcedo\Desktop\VISUAL_STUDIO\TP_Salcedo_y_Jaures\Dominio\bin\Debug\Dominio.dll
-C:\Users\Edwin salcedo\Desktop\VISUAL_STUDIO\TP_Salcedo_y_Jaures\Dominio\bin\Debug\Dominio.pdb
-C:\Users\Edwin salcedo\Desktop\VISUAL_STUDIO\TP_Salcedo_y_Jaures\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
-C:\Users\Edwin salcedo\Desktop\VISUAL_STUDIO\TP_Salcedo_y_Jaures\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
-C:\Users\Edwin salcedo\Desktop\VISUAL_STUDIO\TP_Salcedo_y_Jaures\Dominio\obj\Debug\Dominio.dll
-C:\Users\Edwin salcedo\Desktop\VISUAL_STUDIO\TP_Salcedo_y_Jaures\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Edwin salcedo\source\repos\actividad2\Dominio\bin\Debug\Dominio.dll
+C:\Users\Edwin salcedo\source\repos\actividad2\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Edwin salcedo\source\repos\actividad2\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+C:\Users\Edwin salcedo\source\repos\actividad2\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Edwin salcedo\source\repos\actividad2\Dominio\obj\Debug\Dominio.dll
+C:\Users\Edwin salcedo\source\repos\actividad2\Dominio\obj\Debug\Dominio.pdb
+C:\Users\jmjuarez\source\repos\TPWinForm_Salcedo-y-Juares-master\Dominio\bin\Debug\Dominio.dll
+C:\Users\jmjuarez\source\repos\TPWinForm_Salcedo-y-Juares-master\Dominio\bin\Debug\Dominio.pdb
+C:\Users\jmjuarez\source\repos\TPWinForm_Salcedo-y-Juares-master\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+C:\Users\jmjuarez\source\repos\TPWinForm_Salcedo-y-Juares-master\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\jmjuarez\source\repos\TPWinForm_Salcedo-y-Juares-master\Dominio\obj\Debug\Dominio.dll
+C:\Users\jmjuarez\source\repos\TPWinForm_Salcedo-y-Juares-master\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Edwin salcedo\Desktop\clone\TPWinForm_Salcedo-y-Juares\Dominio\bin\Debug\Dominio.dll
+C:\Users\Edwin salcedo\Desktop\clone\TPWinForm_Salcedo-y-Juares\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Edwin salcedo\Desktop\clone\TPWinForm_Salcedo-y-Juares\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+C:\Users\Edwin salcedo\Desktop\clone\TPWinForm_Salcedo-y-Juares\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Edwin salcedo\Desktop\clone\TPWinForm_Salcedo-y-Juares\Dominio\obj\Debug\Dominio.dll
+C:\Users\Edwin salcedo\Desktop\clone\TPWinForm_Salcedo-y-Juares\Dominio\obj\Debug\Dominio.pdb
