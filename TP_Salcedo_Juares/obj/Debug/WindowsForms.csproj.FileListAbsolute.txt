@@ -15,3 +15,20 @@ C:\Users\Edwin salcedo\Desktop\VISUAL_STUDIO\TP_Salcedo_y_Jaures\TP_Salcedo_Juar
 C:\Users\Edwin salcedo\Desktop\VISUAL_STUDIO\TP_Salcedo_y_Jaures\TP_Salcedo_Juares\bin\Debug\Negocio.pdb
 C:\Users\Edwin salcedo\Desktop\VISUAL_STUDIO\TP_Salcedo_y_Jaures\TP_Salcedo_Juares\obj\Debug\WindowsForms.csproj.CopyComplete
 C:\Users\Edwin salcedo\Desktop\VISUAL_STUDIO\TP_Salcedo_y_Jaures\TP_Salcedo_Juares\obj\Debug\TP_Salcedo_Juares.VentanaAgregar.resources
+C:\Users\Edwin salcedo\Desktop\Nueva carpeta\TP3-Salcedo_Y_Juares\TP_Salcedo_Juares\bin\Debug\TP_Salcedo_Juares.exe.config
+C:\Users\Edwin salcedo\Desktop\Nueva carpeta\TP3-Salcedo_Y_Juares\TP_Salcedo_Juares\bin\Debug\TP_Salcedo_Juares.exe
+C:\Users\Edwin salcedo\Desktop\Nueva carpeta\TP3-Salcedo_Y_Juares\TP_Salcedo_Juares\bin\Debug\TP_Salcedo_Juares.pdb
+C:\Users\Edwin salcedo\Desktop\Nueva carpeta\TP3-Salcedo_Y_Juares\TP_Salcedo_Juares\bin\Debug\Dominio.dll
+C:\Users\Edwin salcedo\Desktop\Nueva carpeta\TP3-Salcedo_Y_Juares\TP_Salcedo_Juares\bin\Debug\Negocio.dll
+C:\Users\Edwin salcedo\Desktop\Nueva carpeta\TP3-Salcedo_Y_Juares\TP_Salcedo_Juares\bin\Debug\Dominio.pdb
+C:\Users\Edwin salcedo\Desktop\Nueva carpeta\TP3-Salcedo_Y_Juares\TP_Salcedo_Juares\bin\Debug\Negocio.pdb
+C:\Users\Edwin salcedo\Desktop\Nueva carpeta\TP3-Salcedo_Y_Juares\TP_Salcedo_Juares\obj\Debug\WindowsForms.csprojAssemblyReference.cache
+C:\Users\Edwin salcedo\Desktop\Nueva carpeta\TP3-Salcedo_Y_Juares\TP_Salcedo_Juares\obj\Debug\TP_Salcedo_Juares.Inicio.resources
+C:\Users\Edwin salcedo\Desktop\Nueva carpeta\TP3-Salcedo_Y_Juares\TP_Salcedo_Juares\obj\Debug\TP_Salcedo_Juares.Properties.Resources.resources
+C:\Users\Edwin salcedo\Desktop\Nueva carpeta\TP3-Salcedo_Y_Juares\TP_Salcedo_Juares\obj\Debug\TP_Salcedo_Juares.Ventana2.resources
+C:\Users\Edwin salcedo\Desktop\Nueva carpeta\TP3-Salcedo_Y_Juares\TP_Salcedo_Juares\obj\Debug\TP_Salcedo_Juares.VentanaAgregar.resources
+C:\Users\Edwin salcedo\Desktop\Nueva carpeta\TP3-Salcedo_Y_Juares\TP_Salcedo_Juares\obj\Debug\WindowsForms.csproj.GenerateResource.cache
+C:\Users\Edwin salcedo\Desktop\Nueva carpeta\TP3-Salcedo_Y_Juares\TP_Salcedo_Juares\obj\Debug\WindowsForms.csproj.CoreCompileInputs.cache
+C:\Users\Edwin salcedo\Desktop\Nueva carpeta\TP3-Salcedo_Y_Juares\TP_Salcedo_Juares\obj\Debug\WindowsForms.csproj.CopyComplete
+C:\Users\Edwin salcedo\Desktop\Nueva carpeta\TP3-Salcedo_Y_Juares\TP_Salcedo_Juares\obj\Debug\TP_Salcedo_Juares.exe
+C:\Users\Edwin salcedo\Desktop\Nueva carpeta\TP3-Salcedo_Y_Juares\TP_Salcedo_Juares\obj\Debug\TP_Salcedo_Juares.pdb
