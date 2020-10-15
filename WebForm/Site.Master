@@ -54,7 +54,7 @@
                         <li><a runat="server" href="~/Contact">Contact</a></li>
                     </ul>
                 </div>
-            </div>
+           </div>
         </div>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
