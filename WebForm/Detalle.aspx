@@ -22,11 +22,7 @@
                         <h4 class="card-title"><%= item.marca %></h4>
                         <h4 class="card-title"><%= item.descripcion %></h4>
                         <h4 class="card-title"><% = item.precio %></h4>
-
-                        <a href="#" class="btn btn-primary">Agregar</a>
-                        <a href="Default.aspx" class ="btn btn-primary">Catalogo</a>
- 
-                    </div>
+                     </div>
                 </div>
             </div>
         </div>

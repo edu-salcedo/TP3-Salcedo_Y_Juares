@@ -24,10 +24,10 @@
 
                                    <h5 class="card-title"><% =item.nombre%> </h5>
                                    <h5 class="card-title"><% =item.precio%> </h5>
-                                </div>
-                                <asp:Button class ="btn btn-primary" ID="btnAgregar" runat="server" Text="Agregar" />
+                                </div>  
+                                <a href="Carrito.aspx?idArticuloAgregado=<%=item.id.ToString() %>" class ="btn btn-primary">Agregar</a>
                                 <a href="Detalle.aspx?idArticulo=<%=item.id.ToString() %>" class ="btn btn-primary">Detalle</a>
-                                <%-- no debe tener espacios  el href si no te mada error --%>
+                                <%-- no debe tener espacios  el href si no te da error --%>
                                 <hr/>
                                 </div>
                        </div>

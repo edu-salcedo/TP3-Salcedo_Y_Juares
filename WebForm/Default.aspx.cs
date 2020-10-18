@@ -12,14 +12,11 @@ namespace WebForm
     public partial class _Default : Page
     {
         public List<Articulo> listaArticulos { get; set; }
-            protected void Page_Load(object sender, EventArgs e)
+        protected void Page_Load(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
             listaArticulos = negocio.listar();
-           // Session.Add("listado", listaArticulos);
-            
+            Session.Add("listadoArticulos", listaArticulos);
         }
-
-      
     }
 }
