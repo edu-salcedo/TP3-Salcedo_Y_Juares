@@ -22,3 +22,9 @@ C:\Users\Edwin salcedo\Desktop\Nueva carpeta\TP3-Salcedo_Y_Juares\Dominio\obj\De
 C:\Users\Edwin salcedo\Desktop\Nueva carpeta\TP3-Salcedo_Y_Juares\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\Edwin salcedo\Desktop\Nueva carpeta\TP3-Salcedo_Y_Juares\Dominio\obj\Debug\Dominio.dll
 C:\Users\Edwin salcedo\Desktop\Nueva carpeta\TP3-Salcedo_Y_Juares\Dominio\obj\Debug\Dominio.pdb
+C:\Users\jmjuarez\Desktop\TP3-Salcedo_Y_Juares-master\Dominio\bin\Debug\Dominio.dll
+C:\Users\jmjuarez\Desktop\TP3-Salcedo_Y_Juares-master\Dominio\bin\Debug\Dominio.pdb
+C:\Users\jmjuarez\Desktop\TP3-Salcedo_Y_Juares-master\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+C:\Users\jmjuarez\Desktop\TP3-Salcedo_Y_Juares-master\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\jmjuarez\Desktop\TP3-Salcedo_Y_Juares-master\Dominio\obj\Debug\Dominio.dll
+C:\Users\jmjuarez\Desktop\TP3-Salcedo_Y_Juares-master\Dominio\obj\Debug\Dominio.pdb
