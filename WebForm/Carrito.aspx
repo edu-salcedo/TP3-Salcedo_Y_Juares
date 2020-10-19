@@ -17,6 +17,7 @@
                     <td><img src="<%=item.imagen %>" alt="<%=item.imagen %>" width="100" height="100"></td>
                     <td><%=item.nombre %></td>
                     <td><%=item.precio %></td>
+
                </tr>
            </tbody>   
 

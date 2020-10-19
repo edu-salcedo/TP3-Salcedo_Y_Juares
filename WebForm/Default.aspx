@@ -1,16 +1,17 @@
 ﻿<%@ Page Title="home page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebForm._Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
- 
-      <td>
-          <asp:ImageButton ID="ImageButton1" width="120" height="120" runat="server" ImageUrl="https://neoattack.com/wp-content/uploads/2017/06/carrito-compra-1024x1024.png" /> <%--OnClick="ImageButton1_Click" />--%>
-      </td>
 
 
+    <div>
+
+        <img src="https://geckocr.com/wp-content/uploads/2018/07/Tienda-Online.png" class="d-block w-30 imagenes_carousel" alt="Apple" id="imagen-spiderman">
+    </div>
+   
+    <hr />
    <div class="container-fluid">
         <div class="row" style="margin-bottom:10px">
             <div class="col-md-12">
-                <h1>Lista de Productos</h1>
                     <div class="form-group">
 
                          <% foreach (Dominio.Articulo item in listaArticulos)
@@ -24,15 +25,15 @@
                                    <h5 class="card-title"><% =item.nombre%> </h5>
                                    <h5 class="card-title"><% =item.precio%> </h5>
                                 </div>
-                               <%-- <asp:Button class ="btn btn-primary" ID="btnAgregar" onClick="btnAgregar_Click" runat="server" Text="Agregar" />--%>
+                               <a href="/Carrito.aspx?idArticulo=<% = item.id.ToString() %>" class="btn btn-primary">Agregar</a>
                                 <a href="Detalle.aspx?idArticulo=<%=item.id.ToString() %>" class ="btn btn-primary">Detalle</a>
                                 <%-- no debe tener espacios  el href si no te manda error de objeto no instanciado--%>
                                 <hr/>
+
                              </div>
                        </div>
                     <%} %>
                   </div>
-               
             </div>
          </div>
       </div>

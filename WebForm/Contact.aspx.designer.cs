@@ -7,11 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebForm
-{
-
-
-    public partial class Contact
-    {
+namespace WebForm {
+    
+    
+    public partial class Contact {
     }
 }

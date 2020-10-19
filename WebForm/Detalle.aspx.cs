@@ -14,7 +14,7 @@ namespace WebForm
         public Articulo artDetalle { get; set; }
         public List<Articulo> listaArticulo { get; set; }
 
-        int idaux;
+       private int idaux;
         protected void Page_Load(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
@@ -27,14 +27,9 @@ namespace WebForm
             }
             catch (Exception)
             {
-                Response.Redirect("Error.aspx");
+                Response.Redirect("Default.aspx");
             }
 
-        }
-
-        protected void btnAgregar_Click(object sender, EventArgs e)
-        {
-            Session.Add("idart", idaux);   // al hacer clikc en agregar creo session idart y le agrego el id  del articulo seleccionado
         }
     }
 }

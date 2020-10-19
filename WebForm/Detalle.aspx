@@ -15,10 +15,9 @@
                         <h4 class="card-title"><%= item.descripcion %></h4>
                         <h4 class="card-title"><% = item.precio %></h4>
 
-                        <asp:Button class ="btn btn-primary" ID="btnAgregar" onClick="btnAgregar_Click" runat="server" Text="Agregar" />
+                        <<a href="/Carrito.aspx?idArticulo=<% = item.id.ToString() %>" class="btn btn-primary">Agregar </a>
                         
                         <a href="Default.aspx" class ="btn btn-primary">Catalogo</a>
-                       <asp:Label ID="lbAgregado" runat="server" Text=""></asp:Label>
  
                     </div>
                 </div>

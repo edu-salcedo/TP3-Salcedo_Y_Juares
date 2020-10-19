@@ -16,28 +16,51 @@ namespace WebForm
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            int idArticulo = Convert.ToInt32(Session["idart"]);   //convierto el id del articulo  seleccionado en detalle.aspx para comprar
 
-            try
+            carritoCompra = new List<Articulo>();
+            int idArticulo = Convert.ToInt32(Request.QueryString["idArticulo"]);
+            bool quitar = Convert.ToBoolean(Request.QueryString["quitar"]);
+
+            if (Session["carrito"] == null)    //si la seccion no tiene la lista de articulos  se le agrega una
             {
-                if (idArticulo != 0)
+                Session.Add("carrito", new List<Articulo>());
+
+            }
+
+
+            if (idArticulo != 0 )
+            {
+                try
                 {
-                    carritoCompra = new List<Articulo>();
                     articuloNuevo = new Articulo();
                     ArticuloNegocio auxNegocio = new ArticuloNegocio();
-                    articuloNuevo = auxNegocio.listar().Find(x => x.id == idArticulo);
-                }
-                if (Session["carrito"] != null)
-                {
+                    articuloNuevo = auxNegocio.listar().Find(x => x.id == idArticulo);  //sender le asigna a la variable articulonuevo  el id encontrado
                     carritoCompra = (List<Articulo>)Session["carrito"];
+                    carritoCompra.Add(articuloNuevo);
+                    Session.Add("carrito", carritoCompra);             //agregamos a la seccion "carrito" la lista con el nuevo articulo 
+
+                }
+                catch (Exception)
+                {
+                    Response.Redirect("Default.aspx");
+
                 }
 
-                carritoCompra.Add(articuloNuevo);    //se agrega el articulo seleccionado a la lista carrito
-                Session.Add("carrito", carritoCompra);       //se agrega a la session "carrito" la lista carrito 
             }
-            catch (Exception)
+           
+            else
             {
-                Response.Redirect("Default.aspx");
+                try
+                {
+
+                    carritoCompra = (List<Articulo>)Session["carrito"];
+
+                }
+                catch (Exception)
+                {
+                    Response.Redirect("Default.aspx");
+
+                }
             }
         }
     }

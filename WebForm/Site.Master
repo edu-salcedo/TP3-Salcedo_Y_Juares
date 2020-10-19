@@ -6,7 +6,6 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -16,7 +15,8 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
-<body>
+<body style="padding-top: 0px; background-image: url(http://chainimage.com/images/fondos-de-pantalla-azul-fondo-colores-texturas-foto-im%C3%A1genes-hd-y.jpg); background-repeat: no-repeat; background-attachment: fixed; background-position: center;">>
+      <%--se le agregra la imagen de fondo--%>
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -50,9 +50,16 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                         <li><a runat="server" href="~/">Home</a></li>
+                        <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/carrito">carrito</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
+                        <li>
+                            <asp:TextBox ID="TexBuscar" name="art" runat="server" TextMode="Search" list="listaArticulos" CausesValidation="False" AutoCompleteType="None" Width="980" Style="padding: 8px 12px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;" />
+                            <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" class="btn btn-primary" BorderColor="" />
+
+                           <%-- se coloca el texbox y boton de buscar en el navbar del master, asi siempre quedan fijos --%>
+
+                       <li />
                     </ul>
                 </div>
             </div>
