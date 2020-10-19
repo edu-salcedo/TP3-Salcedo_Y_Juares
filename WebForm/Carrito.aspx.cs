@@ -11,21 +11,33 @@ namespace WebForm
 {
     public partial class Carrito : System.Web.UI.Page
     {
-        public Articulo articuloAgregado { get; set; }
-        public List<Articulo> listaArticulosCarrito { get; set; }
+        public Articulo articuloNuevo { get; set; }
+        public List<Articulo> carritoCompra = null;
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            ArticuloNegocio negocio = new ArticuloNegocio();
+            int idArticulo = Convert.ToInt32(Session["idart"]);   //convierto el id del articulo  seleccionado en detalle.aspx para comprar
+
             try
             {
-                //  artDetalle = ((List<Articulo>)Session.Contents["ListaArticulos"]).Find(X => X.id.ToString().Contains(idItem));
-                listaArticulosCarrito = negocio.listar();
-                int idaux = Convert.ToInt32(Request.QueryString["idArticuloAgregado"]);
-                articuloAgregado = listaArticulosCarrito.Find(x => x.id == idaux);
+                if (idArticulo != 0)
+                {
+                    carritoCompra = new List<Articulo>();
+                    articuloNuevo = new Articulo();
+                    ArticuloNegocio auxNegocio = new ArticuloNegocio();
+                    articuloNuevo = auxNegocio.listar().Find(x => x.id == idArticulo);
+                }
+                if (Session["carrito"] != null)
+                {
+                    carritoCompra = (List<Articulo>)Session["carrito"];
+                }
+
+                carritoCompra.Add(articuloNuevo);    //se agrega el articulo seleccionado a la lista carrito
+                Session.Add("carrito", carritoCompra);       //se agrega a la session "carrito" la lista carrito 
             }
             catch (Exception)
             {
-                throw;
+                Response.Redirect("Default.aspx");
             }
         }
     }

@@ -13,6 +13,8 @@ namespace WebForm
     {
         public Articulo artDetalle { get; set; }
         public List<Articulo> listaArticulo { get; set; }
+
+        int idaux;
         protected void Page_Load(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
@@ -20,7 +22,7 @@ namespace WebForm
             {
                 //  artDetalle = ((List<Articulo>)Session.Contents["ListaArticulos"]).Find(X => X.id.ToString().Contains(idItem));
                 listaArticulo = negocio.listar();
-                int idaux = Convert.ToInt32(Request.QueryString["idArticulo"]);
+                idaux = Convert.ToInt32(Request.QueryString["idArticulo"]);
                 artDetalle = listaArticulo.Find(x => x.id == idaux);
             }
             catch (Exception)
@@ -28,6 +30,11 @@ namespace WebForm
                 Response.Redirect("Error.aspx");
             }
 
+        }
+
+        protected void btnAgregar_Click(object sender, EventArgs e)
+        {
+            Session.Add("idart", idaux);   // al hacer clikc en agregar creo session idart y le agrego el id  del articulo seleccionado
         }
     }
 }

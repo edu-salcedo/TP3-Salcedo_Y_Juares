@@ -16,3 +16,12 @@ C:\Users\Edwin salcedo\Desktop\Nueva carpeta\TP3-Salcedo_Y_Juares\Negocio\obj\De
 C:\Users\Edwin salcedo\Desktop\Nueva carpeta\TP3-Salcedo_Y_Juares\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 C:\Users\Edwin salcedo\Desktop\Nueva carpeta\TP3-Salcedo_Y_Juares\Negocio\obj\Debug\Negocio.dll
 C:\Users\Edwin salcedo\Desktop\Nueva carpeta\TP3-Salcedo_Y_Juares\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Edwin salcedo\Documents\GitHub\TP3-Salcedo_Y_Juares\Negocio\bin\Debug\Negocio.dll
+C:\Users\Edwin salcedo\Documents\GitHub\TP3-Salcedo_Y_Juares\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Edwin salcedo\Documents\GitHub\TP3-Salcedo_Y_Juares\Negocio\bin\Debug\Dominio.dll
+C:\Users\Edwin salcedo\Documents\GitHub\TP3-Salcedo_Y_Juares\Negocio\bin\Debug\Dominio.pdb
+C:\Users\Edwin salcedo\Documents\GitHub\TP3-Salcedo_Y_Juares\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Users\Edwin salcedo\Documents\GitHub\TP3-Salcedo_Y_Juares\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Edwin salcedo\Documents\GitHub\TP3-Salcedo_Y_Juares\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\Edwin salcedo\Documents\GitHub\TP3-Salcedo_Y_Juares\Negocio\obj\Debug\Negocio.dll
+C:\Users\Edwin salcedo\Documents\GitHub\TP3-Salcedo_Y_Juares\Negocio\obj\Debug\Negocio.pdb

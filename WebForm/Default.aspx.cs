@@ -16,7 +16,7 @@ namespace WebForm
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
             listaArticulos = negocio.listar();
-            Session.Add("listadoArticulos", listaArticulos);
+            
         }
     }
 }

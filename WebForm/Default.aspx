@@ -7,11 +7,10 @@
       </td>
 
 
-     <div class="container-fluid">
+   <div class="container-fluid">
         <div class="row" style="margin-bottom:10px">
             <div class="col-md-12">
                 <h1>Lista de Productos</h1>
-                <form action="">
                     <div class="form-group">
 
                          <% foreach (Dominio.Articulo item in listaArticulos)
@@ -24,18 +23,18 @@
 
                                    <h5 class="card-title"><% =item.nombre%> </h5>
                                    <h5 class="card-title"><% =item.precio%> </h5>
-                                </div>  
-                                <a href="Carrito.aspx?idArticuloAgregado=<%=item.id.ToString() %>" class ="btn btn-primary">Agregar</a>
-                                <a href="Detalle.aspx?idArticulo=<%=item.id.ToString() %>" class ="btn btn-primary">Detalle</a>
-                                <%-- no debe tener espacios  el href si no te da error --%>
-                                <hr/>
                                 </div>
+                               <%-- <asp:Button class ="btn btn-primary" ID="btnAgregar" onClick="btnAgregar_Click" runat="server" Text="Agregar" />--%>
+                                <a href="Detalle.aspx?idArticulo=<%=item.id.ToString() %>" class ="btn btn-primary">Detalle</a>
+                                <%-- no debe tener espacios  el href si no te manda error de objeto no instanciado--%>
+                                <hr/>
+                             </div>
                        </div>
                     <%} %>
                   </div>
-               </form>
+               
             </div>
-
-        </div>
+         </div>
+      </div>
 
 </asp:Content>

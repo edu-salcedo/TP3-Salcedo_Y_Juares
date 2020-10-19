@@ -1,15 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Detalle.aspx.cs" Inherits="WebForm.Detalle" %>
 <asp:Content ID="content2" ContentPlaceHolderID="MainContent" runat="server">
 
-<%--   <div class ="container">
-        <div class="jumbotron">
-          <img src="<%=artDetalle.imagen %>" width="200" height="200" class="card-img-top" alt="...">
-         
-               <h1 class ="dsiplay-4"><%=artDetalle.nombre %></h1>
-        </div>
-    </div>
-    <asp:label id="label1" runat="server" text="label"></asp:label>--%>
-     <% Dominio.Articulo item = artDetalle;%>
+  <% Dominio.Articulo item = artDetalle;%>
        <div class="jumbotron">
         <h2 class="card-title"><% = item.nombre %></h2>
         <div class="row">
@@ -22,7 +14,13 @@
                         <h4 class="card-title"><%= item.marca %></h4>
                         <h4 class="card-title"><%= item.descripcion %></h4>
                         <h4 class="card-title"><% = item.precio %></h4>
-                     </div>
+
+                        <asp:Button class ="btn btn-primary" ID="btnAgregar" onClick="btnAgregar_Click" runat="server" Text="Agregar" />
+                        
+                        <a href="Default.aspx" class ="btn btn-primary">Catalogo</a>
+                       <asp:Label ID="lbAgregado" runat="server" Text=""></asp:Label>
+ 
+                    </div>
                 </div>
             </div>
         </div>
