@@ -15,9 +15,14 @@ namespace WebForm
         protected void Page_Load(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
-            listaArticulos = negocio.listar();
-          
-        }
+            listaArticulos = (List<Articulo>)Session["ListArticulos"];
 
+            if (Session["ListArticulos"] == null || listaArticulos.Count() == 0) // si la session "lista Aritculo" es nulo o la lista de articulos no tiene elementos
+            {
+                listaArticulos = negocio.listar();                                //llenamos la variable listaArticulos de todos los articulos en base de datos
+            }
+            Session.Add("ListArticulos", new List<Articulo>());
+
+        }
     }
 }

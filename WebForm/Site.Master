@@ -53,9 +53,10 @@
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/carrito">carrito</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
-                        <li>
-                            <asp:TextBox ID="TexBuscar" name="art" runat="server" TextMode="Search" list="listaArticulos" CausesValidation="False" AutoCompleteType="None" Width="980" Style="padding: 8px 12px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;" />
-                            <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" class="btn btn-primary" BorderColor="" />
+                        <li>                                                    
+                                                                                                                          
+                            <asp:TextBox ID="TexBuscar" name="art" runat="server" TextMode="Search" list="lista" CausesValidation="False" AutoCompleteType="None" Width="980" Style="padding: 8px 12px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;" />
+                            <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" class="btn btn-primary" />
 
                            <%-- se coloca el texbox y boton de buscar en el navbar del master, asi siempre quedan fijos --%>
 

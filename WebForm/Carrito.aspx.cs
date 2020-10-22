@@ -13,55 +13,50 @@ namespace WebForm
     {
         public Articulo articuloNuevo { get; set; }
         public List<Articulo> carritoCompra = null;
-
+        private int idArticulo;
         protected void Page_Load(object sender, EventArgs e)
         {
 
             carritoCompra = new List<Articulo>();
-            int idArticulo = Convert.ToInt32(Request.QueryString["idArticulo"]);
-            bool quitar = Convert.ToBoolean(Request.QueryString["quitar"]);
-
-            if (Session["carrito"] == null)    //si la seccion no tiene la lista de articulos  se le agrega una
+             idArticulo = Convert.ToInt32(Request.QueryString["idArticulo"]);
+            
+            if (Session["carrito"] == null)    // si session "carrito" es nulo creamos una session del lista de articulos
             {
                 Session.Add("carrito", new List<Articulo>());
 
             }
 
-
             if (idArticulo != 0 )
             {
+                   
                 try
                 {
                     articuloNuevo = new Articulo();
                     ArticuloNegocio auxNegocio = new ArticuloNegocio();
-                    articuloNuevo = auxNegocio.listar().Find(x => x.id == idArticulo);  //sender le asigna a la variable articulonuevo  el id encontrado
+                    articuloNuevo = auxNegocio.listar().Find(x => x.id == idArticulo);  // le asigna a la variable articulonuevo  el id encontrado
                     carritoCompra = (List<Articulo>)Session["carrito"];
                     carritoCompra.Add(articuloNuevo);
-                    Session.Add("carrito", carritoCompra);             //agregamos a la seccion "carrito" la lista con el nuevo articulo 
+                    Session.Add("carrito", carritoCompra);             //agregamos a la lista seccion "carrito" con el nuevo articulo 
 
                 }
                 catch (Exception)
                 {
-                    Response.Redirect("Default.aspx");
+                    Response.Redirect("Error.aspx");
 
                 }
 
+            }
+            if (Request.QueryString["idCancelar"] != null)   //si se hizo click en el boton cancelar
+            {
+                idArticulo = Convert.ToInt32(Request.QueryString["idCancelar"]); //comvertimos a entero el id de articulo
+                carritoCompra = (List<Articulo>)Session["carrito"];                   // llenamos  carritoCompra con la session "carrito" que tiene al lista de articulos
+               carritoCompra.Remove(carritoCompra.Find(x => idArticulo == x.id)); // se remueve  de la lista de carrito compra el id seleccionado
+                Session["carrito"] = carritoCompra;
             }
            
-            else
-            {
-                try
-                {
-
-                    carritoCompra = (List<Articulo>)Session["carrito"];
-
-                }
-                catch (Exception)
-                {
-                    Response.Redirect("Default.aspx");
-
-                }
-            }
+        
         }
+
+    
     }
 }

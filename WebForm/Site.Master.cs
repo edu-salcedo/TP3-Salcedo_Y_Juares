@@ -11,30 +11,33 @@ namespace WebForm
 {
     public partial class SiteMaster : MasterPage
     {
-        public List<Dominio.Articulo> listaCarrito = null;
-        public string debuger;
+        public List<Articulo> listaBuscar{ get; set; }
+
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+            listaBuscar = (List<Articulo>)Session["ListArticulos"];
+          
         }
 
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
-            ArticuloNegocio negocio = new ArticuloNegocio();
-            List<Articulo> listaAux;
+
+            List<Articulo> lista = new List<Articulo>();
+            ArticuloNegocio Negocio = new ArticuloNegocio();
+           
             try
             {
-                listaAux = negocio.listar();
-                int idArticulo = listaAux.Find(x => x.nombre.ToLower().Contains(TexBuscar.Text.ToLower())).id;
-
-
-                Response.Redirect("Detalle.aspx?idArticulo=" + idArticulo.ToString());
+                lista = Negocio.listar();
+                listaBuscar = lista.FindAll(x => x.nombre.ToLower().Contains(TexBuscar.Text.ToLower()) || x.marca.nombre.ToLower().Contains(TexBuscar.Text.ToLower())); //buscamos coinsidencias por nombre o por marca
+                Session.Add("ListArticulos", listaBuscar);     // agregamos a la session "carrito" el articulo encontrado 
+                Response.Redirect("Default.aspx");
             }
             catch (Exception ex)
             {
-                throw ex;
 
+                throw ex;
             }
+
         }
     }
 }

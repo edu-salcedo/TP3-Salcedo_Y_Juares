@@ -15,7 +15,7 @@
                         <h4 class="card-title"><%= item.descripcion %></h4>
                         <h4 class="card-title"><% = item.precio %></h4>
 
-                        <<a href="/Carrito.aspx?idArticulo=<% = item.id.ToString() %>" class="btn btn-primary">Agregar </a>
+                        <a href="/Carrito.aspx?idArticulo=<% = item.id.ToString() %>" class="btn btn-primary">Agregar </a>
                         
                         <a href="Default.aspx" class ="btn btn-primary">Catalogo</a>
  
