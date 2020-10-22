@@ -16,7 +16,7 @@ namespace WebForm
         private int idArticulo;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            decimal total = 0;
             carritoCompra = new List<Articulo>();
              idArticulo = Convert.ToInt32(Request.QueryString["idArticulo"]);
             
@@ -37,12 +37,7 @@ namespace WebForm
                     carritoCompra = (List<Articulo>)Session["carrito"];
                     carritoCompra.Add(articuloNuevo);
                     Session.Add("carrito", carritoCompra);             //agregamos a la lista seccion "carrito" con el nuevo articulo 
-                   decimal total = 0;
-                    foreach(var item in carritoCompra)
-                    {
-                        total += item.precio;
-                    }
-                    lbtotal.Text = total.ToString();
+                   
                 }
                 catch (Exception)
                 {
@@ -57,12 +52,19 @@ namespace WebForm
                 carritoCompra = (List<Articulo>)Session["carrito"];                   // llenamos  carritoCompra con la session "carrito" que tiene al lista de articulos
                carritoCompra.Remove(carritoCompra.Find(x => idArticulo == x.id)); // se remueve  de la lista de carrito compra el id seleccionado
                 Session["carrito"] = carritoCompra;
+               
+               
             }
             else
             { 
                 carritoCompra = (List<Articulo>)Session["carrito"]; // si no se agrega un articulo  se llena carrito compra con la session "carrito"
                 
             }
+            foreach (var item in carritoCompra)
+            {
+                total += item.precio;
+            }
+            lbtotal.Text = total.ToString();
 
 
         }

@@ -8,7 +8,7 @@
 
             <div class="col-md-4">
                 <div class="card" style="width: 18rem;">
-                    <img src="<%=item.imagen %>" class="card-img-top" alt="alternative-text" width="280">
+                    <img src="<%=item.imagen %>" style="max-height: 10vw; max-width: 10vw; margin: 3vw;" >
                     <div class="card-body">
                        
                         <h4 class="card-title"><%= item.marca %></h4>

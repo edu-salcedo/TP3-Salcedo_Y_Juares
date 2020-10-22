@@ -27,7 +27,8 @@ namespace WebForm
             }
             catch (Exception)
             {
-                Response.Redirect("Default.aspx");
+          
+                Response.Redirect("Error.aspx");
             }
 
         }

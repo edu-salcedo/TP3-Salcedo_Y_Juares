@@ -1,11 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Carrito.aspx.cs" Inherits="WebForm.Carrito" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
     
     <hr />
-   <h1>
-
-   </h1>
-
+    <br />
     <table class="table table-dark">
         <thead>
           <tr>
@@ -24,16 +22,19 @@
                     <td> <b><%=item.codigo %> </b></td>
                     <td><%=item.nombre %></td>
                     <td><%=item.precio %></td>
-                    <td><a class="btn btn-primary btn-lg" href="Carrito.aspx?idCancelar=<%= item.id %>" role="button">Cancelar</a></td> 
+                    <td><a class="btn btn-primary" href="Carrito.aspx?idCancelar=<%= item.id %>" role="button">Cancelar</a></td> 
 
                </tr>
            </tbody>   
     <%}%>
    </table> 
 
+   
+
     <div>
+
        <h3 style="font-family:Verdana">total : $<asp:Label ID="lbtotal" Text="" runat="server" /></h3>
 
     </div>
-    <a href="Default.aspx" class ="btn btn-primary">Ver mas Articulos</a>
+    <a href="Default.aspx" class ="btn btn-primary btn lg">Ver mas Articulos</a>
 </asp:Content>
