@@ -43,30 +43,38 @@
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">ARTICULOS</a>
-                </div>
-                <div>
-                        <a runat="server" href="~/">Home</a>
-                        <a runat="server" href="~/carrito">carrito</a>
-                        <a runat="server" href="~/Contact">Contact</a>
-                        <asp:TextBox ID="TexBuscar" name="art" runat="server" TextMode="Search" list="lista" CausesValidation="False" AutoCompleteType="None" Width="980" Style="padding: 8px 12px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;" />
-                        <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" class="btn btn-primary" />
+                    <ul class="nav nav-pills nav-fill">
+                        <li class="nav-item">
+                        <a class="navbar-brand" runat="server" href="~/"><img src="https://lh3.googleusercontent.com/QITXqJTSWFkQ7zVj6j5jWPjGe_XBKiI9hi73gQuNcb5H48wh3uA9ht6-6JAySzpCBjla" alt="Logo"  width="80" height="80"/></a>
+                         <li class="nav-item">
+                        <a class="flex-sm-fill text-sm-center nav-link" runat="server" href="~/"><b>Home</b></a>
+                          <li class="nav-item">
+                        <a class="flex-sm-fill text-sm-center nav-link" runat="server" href="~/Carrito"><b>Carrito</b></a>
+                         <li class="nav-item">
+                        <a class="flex-sm-fill text-sm-center nav-link" runat="server" href="~/Contact"><b>Contacto</b></a>
+                       <li class="nav-item">
+                        <a> <asp:TextBox ID="TexBuscar" name="art" runat="server" TextMode="Search" list="lista" CausesValidation="False" AutoCompleteType="None" Width="980" Style="padding: 8px 12px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;" />
+                        <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" class="btn btn-primary" /></a>
+                        <br />
+                           <li class="nav-item">
+                        <a class="navbar-brand" runat="server" href="~/Carrito"><img src="https://c0.klipartz.com/pngpicture/727/430/gratis-png-carrito-de-compras-supermercado-carrito-de-compras.png" alt="LogoCarrito"  width="80" height="80"/></a>
+                       
                         <%-- se coloca el texbox y boton de buscar en el navbar del master, asi siempre quedan fijos --%>  
-                </div>
-            </div>
+                         
+                     </ul>
+                 </div>
+           </div>
         </div>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
+            <div style ="color:white">
+
             <footer>
                 <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
             </footer>
+            </div>
         </div>
 
     </form>

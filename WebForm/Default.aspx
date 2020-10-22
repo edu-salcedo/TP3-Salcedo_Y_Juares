@@ -21,9 +21,9 @@
                     <h4 class="card-title"> <b ><%= item.nombre %></b></h4>
                     <h5 class="card-title"><%= item.marca %></h5>
                     <h5 class="card-title">$<%= item.precio %></h5>
-                    <a href="Carrito.aspx?idArticulo=<%=item.id.ToString() %>" class="btn btn-primary">Agregar</a>
+                    <a href="Carrito.aspx?idArticulo=<%=item.id.ToString() %>" class="btn btn-success">Agregar</a>
                     <br />
-                    <a href="Detalle.aspx?idArticulo=<%=item.id.ToString() %>" class ="btn btn-primary">Detalle</a>
+                    <a href="Detalle.aspx?idArticulo=<%=item.id.ToString() %>" class ="btn btn-info">Detalle</a>
                      <%-- no debe tener espacios  el href si no te manda error de objeto no instanciado--%>
                 </div>
             </div>
